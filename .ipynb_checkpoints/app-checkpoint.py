@@ -11,6 +11,7 @@ def main():
     # download internlm2 to the base_path directory using git tool
     base_path = './firstTry'
     os.system(f'git clone https://Junco:ee3ecc6b6cc257755dfe60af7f82dc98b9fed765@code.openxlab.org.cn/Junco/firstTry.git {base_path}')
+    os.system(f'apt-get update && apt-get install git-lfs && git lfs install')
     os.system(f'cd {base_path} && git lfs pull')
 
     #/home/xlab-app-center
