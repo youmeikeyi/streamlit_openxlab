@@ -11,7 +11,7 @@ def main():
     # download internlm2 to the base_path directory using git tool
     base_path = './firstTry'
     os.system(f'git clone https://Junco:ee3ecc6b6cc257755dfe60af7f82dc98b9fed765@code.openxlab.org.cn/Junco/firstTry.git {base_path}')
-    os.system(f'cd {brtase_path} && git lfs pull')
+    os.system(f'cd {base_path} && git lfs pull')
 
     #/home/xlab-app-center
     os.system('streamlit run ./web_demo.py --server.address=0.0.0.0 --server.port 7860')
