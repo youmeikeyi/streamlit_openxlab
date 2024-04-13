@@ -1,25 +1,17 @@
+import os
 import streamlit as st
 
 def main():
-    import streamlit as st
 
     st.write("# Welcome to Streamlit! 👋")
 
-    st.markdown(
-        """
-        Streamlit is an open-source app framework built specifically for
-        Machine Learning and Data Science projects.
+    
+    #AT:ee3ecc6b6cc257755dfe60af7f82dc98b9fed765
+    # download internlm2 to the base_path directory using git tool
+    base_path = './internlm2-chat-7b'
+    os.system(f'git clone https://Junco:your_git_token@code.openxlab.org.cn/Junco/firstTry.git {base_path}')
+    os.system(f'cd {base_path} && git lfs pull')
 
-
-        ### Want to learn more?
-
-        - Check out [streamlit.io](https://streamlit.io)
-        - Jump into our [documentation](https://docs.streamlit.io)
-        - Ask a question in our [community
-          forums](https://discuss.streamlit.io)
-        - For more information on deploying Streamlit apps on the OpenXLab. [Official documentation](https://openxlab.org.cn/docs/en/apps/Streamlit%E5%BA%94%E7%94%A8.html)
-    """
-    )
 
 if __name__ == "__main__":
     main()
